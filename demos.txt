@@ -1,0 +1,4 @@
+curl -X POST http://localhost:3000/api/campaign/673626e4aa8f0a2d87126d5d/send
+
+
+curl -X POST http://localhost:3000/api/communication/673627dd1c341282072164a1/receipt

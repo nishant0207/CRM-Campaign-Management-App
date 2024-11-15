@@ -14,6 +14,7 @@ Xeno CRM & Campaign Management App is a web application that allows brands to ma
 	Future Enhancements
 
 ## Features
+
 1.	**Customer and Order Data Management:** APIs to add customers and orders, including details like spending, visits, and last visit date.
 2.	**Audience Segmentation:** Create audience segments based on customizable conditions (e.g., spending thresholds, visit frequency).
 3.	**Campaign Creation:** Define and save campaign details, including personalized messages and target audience conditions.
@@ -23,6 +24,7 @@ Xeno CRM & Campaign Management App is a web application that allows brands to ma
 7.	**Responsive UI:** User-friendly interface for viewing and managing campaigns.
 
 ## Technologies Used
+
 •	**Frontend:** React.js, React Router, Firebase Authentication
 •	**Backend:** Node.js, Express.js, MongoDB
 •	**Database:** MongoDB (with Mongoose for data modeling)

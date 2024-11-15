@@ -41,8 +41,8 @@ Xeno CRM & Campaign Management App is a web application that allows brands to ma
 
 **1. Clone the Repository**
 
-git clone https://github.com/your-username/xeno-crm-campaign-app.git
-cd xeno-crm-campaign-app
+`git clone https://github.com/your-username/xeno-crm-campaign-app.git`
+`cd xeno-crm-campaign-app`
 
 **2. Backend Setup**
 

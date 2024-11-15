@@ -166,6 +166,7 @@ The frontend should now be running on http://localhost:3001.
 
 3.	Deploy to Netlify or Vercel, connecting the repository and specifying the root as xeno-crm-frontend.
 4.	Update Firebase Authorized Domains:
+   
 		•	In Firebase Console, add your frontend deployment URL to the list of authorized domains under Authentication settings.
 
 ## Future Enhancements

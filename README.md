@@ -170,15 +170,8 @@ The frontend should now be running on http://localhost:3001.
 ## Future Enhancements
 **Enhanced Campaign Analytics:** Track engagement metrics, such as open rates and conversion rates.
 
-Role-Based Access: Different levels of access for admins and marketers.
+**Role-Based Access:** Different levels of access for admins and marketers.
 
-Advanced Audience Segmentation: More detailed segmentation criteria, such as geographic location or purchase history.
+**Advanced Audience Segmentation:** More detailed segmentation criteria, such as geographic location or purchase history.
 
-Automated Campaign Scheduling: Schedule campaigns to send automatically at specified times.
-
-
-## Acknowledgments
-
-•	Firebase for Authentication and Analytics
-•	MongoDB for data management
-•	React and Node.js for web development
+**Automated Campaign Scheduling:** Schedule campaigns to send automatically at specified times.

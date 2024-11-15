@@ -122,10 +122,10 @@ The frontend should now be running on http://localhost:3001.
 
 ## Usage
 
-1.	Authentication:
+	1.	Authentication:
 		- Visit http://localhost:3001.
 		- Sign in with your Google account to access the dashboard.
-2.	Dashboard:
+	2.	Dashboard:
 		- Create Campaign: Define a campaign with a target audience based on conditions like spending, visits, and last visit.
 		- Send Messages: Click “Send Messages” for each campaign to send messages to the audience and track delivery.
 		- View Statistics: Navigate to the Statistics page to view cumulative stats for all campaigns.

@@ -19,7 +19,7 @@ Xeno CRM & Campaign Management App is a web application that allows brands to ma
 3.	**Campaign Creation:** Define and save campaign details, including personalized messages and target audience conditions.
 4.	**Message Sending and Tracking:** Send campaign messages to audience segments, with randomized delivery tracking (success/failure).
 5.	**Statistics Page:** View overall statistics, including total campaigns, messages sent, and failed messages.
-6.	**Google Authentication: Secure access to the dashboard with Google sign-in.
+6.	**Google Authentication:** Secure access to the dashboard with Google sign-in.
 7.	**Responsive UI:** User-friendly interface for viewing and managing campaigns.
 
 ## Technologies Used

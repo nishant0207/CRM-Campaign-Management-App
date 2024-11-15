@@ -116,19 +116,19 @@ The frontend should now be running on http://localhost:3001.
 
 ## Environment Variables
 
-	•	MONGODB_URI: MongoDB connection string (required for backend)
-	•	PORT: Port for backend server
-	•	Firebase Config: Add Firebase keys directly in firebaseConfig.js for authentication.
+	MONGODB_URI: MongoDB connection string (required for backend)
+	PORT: Port for backend server
+	Firebase Config: Add Firebase keys directly in firebaseConfig.js for authentication.
 
 ## Usage
 
 1.	Authentication:
-	•	Visit http://localhost:3001.
-	•	Sign in with your Google account to access the dashboard.
+		Visit http://localhost:3001.
+		Sign in with your Google account to access the dashboard.
 2.	Dashboard:
-	•	Create Campaign: Define a campaign with a target audience based on conditions like spending, visits, and last visit.
-	•	Send Messages: Click “Send Messages” for each campaign to send messages to the audience and track delivery.
-	•	View Statistics: Navigate to the Statistics page to view cumulative stats for all campaigns.
+		Create Campaign: Define a campaign with a target audience based on conditions like spending, visits, and last visit.
+		Send Messages: Click “Send Messages” for each campaign to send messages to the audience and track delivery.
+		View Statistics: Navigate to the Statistics page to view cumulative stats for all campaigns.
 
 ## Project Structure
 

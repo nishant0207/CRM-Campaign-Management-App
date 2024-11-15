@@ -152,13 +152,13 @@ The frontend should now be running on http://localhost:3001.
 
 ## Deployment
 
-## Backend Deployment (Heroku or Render)
+**Backend Deployment (Heroku or Render)**
 
 1.	Set Up Environment Variables on the platform for MONGODB_URI and PORT.
 2.	Deploy the backend code to your chosen platform.
 3.	Update the API URL in api.js on the frontend to point to the deployed backend URL.
 
-## Frontend Deployment (Netlify or Vercel)
+**Frontend Deployment (Netlify or Vercel)**
 
 	1.	Build the Frontend:
 

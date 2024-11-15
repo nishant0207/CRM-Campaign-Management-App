@@ -72,63 +72,63 @@ The backend should now be running on http://localhost:3000.
 
 1.	Navigate to the Frontend Directory:
 
-	cd xeno-crm-frontend
+		cd xeno-crm-frontend
 
 
 2.	Install Frontend Dependencies:
 
-	npm install
+		npm install
 
 
 3.	Firebase Configuration:
 
-Create a Firebase project in the Firebase Console and enable Google Authentication. Get the Firebase configuration settings and add them to src/firebaseConfig.js:
+	Create a Firebase project in the Firebase Console and enable Google Authentication. Get the Firebase configuration settings and add them to src/firebaseConfig.js:
 
-	import { initializeApp } from 'firebase/app';
-	import { getAuth, GoogleAuthProvider } from 'firebase/auth';
+		import { initializeApp } from 'firebase/app';
+		import { getAuth, GoogleAuthProvider } from 'firebase/auth';
+		
+		const firebaseConfig = {
+		  apiKey: "YOUR_API_KEY",
+		  authDomain: "YOUR_AUTH_DOMAIN",
+		  projectId: "YOUR_PROJECT_ID",
+		  storageBucket: "YOUR_STORAGE_BUCKET",
+		  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+		  appId: "YOUR_APP_ID",
+		  measurementId: "YOUR_MEASUREMENT_ID"
+		};
 	
-	const firebaseConfig = {
-	  apiKey: "YOUR_API_KEY",
-	  authDomain: "YOUR_AUTH_DOMAIN",
-	  projectId: "YOUR_PROJECT_ID",
-	  storageBucket: "YOUR_STORAGE_BUCKET",
-	  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-	  appId: "YOUR_APP_ID",
-	  measurementId: "YOUR_MEASUREMENT_ID"
-	};
-
-	const app = initializeApp(firebaseConfig);
-	export const auth = getAuth(app);
-	export const googleProvider = new GoogleAuthProvider();
+		const app = initializeApp(firebaseConfig);
+		export const auth = getAuth(app);
+		export const googleProvider = new GoogleAuthProvider();
 
 
 4.	Set Up API URL:
 	In src/services/api.js, set the base URL for the backend API:
 
-	const API_URL = 'http://localhost:3000/api';
+		const API_URL = 'http://localhost:3000/api';
 
 
 5.	Run the Frontend Server:
 
-   	npm start
+   		npm start
 
 The frontend should now be running on http://localhost:3001.
 
 ## Environment Variables
 
-•	MONGODB_URI: MongoDB connection string (required for backend)
-•	PORT: Port for backend server
-•	Firebase Config: Add Firebase keys directly in firebaseConfig.js for authentication.
+	•	MONGODB_URI: MongoDB connection string (required for backend)
+	•	PORT: Port for backend server
+	•	Firebase Config: Add Firebase keys directly in firebaseConfig.js for authentication.
 
 ## Usage
 
 1.	Authentication:
-•	Visit http://localhost:3001.
-•	Sign in with your Google account to access the dashboard.
+	•	Visit http://localhost:3001.
+	•	Sign in with your Google account to access the dashboard.
 2.	Dashboard:
-•	Create Campaign: Define a campaign with a target audience based on conditions like spending, visits, and last visit.
-•	Send Messages: Click “Send Messages” for each campaign to send messages to the audience and track delivery.
-•	View Statistics: Navigate to the Statistics page to view cumulative stats for all campaigns.
+	•	Create Campaign: Define a campaign with a target audience based on conditions like spending, visits, and last visit.
+	•	Send Messages: Click “Send Messages” for each campaign to send messages to the audience and track delivery.
+	•	View Statistics: Navigate to the Statistics page to view cumulative stats for all campaigns.
 
 ## Project Structure
 

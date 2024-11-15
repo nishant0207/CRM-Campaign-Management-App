@@ -168,11 +168,13 @@ The frontend should now be running on http://localhost:3001.
 4.	**Update Firebase Authorized Domains:** In Firebase Console, add your frontend deployment URL to the list of authorized domains under Authentication settings.
 
 ## Future Enhancements
+**Enhanced Campaign Analytics:** Track engagement metrics, such as open rates and conversion rates.
 
-•	Enhanced Campaign Analytics: Track engagement metrics, such as open rates and conversion rates.
-•	Role-Based Access: Different levels of access for admins and marketers.
-•	Advanced Audience Segmentation: More detailed segmentation criteria, such as geographic location or purchase history.
-•	Automated Campaign Scheduling: Schedule campaigns to send automatically at specified times.
+Role-Based Access: Different levels of access for admins and marketers.
+
+Advanced Audience Segmentation: More detailed segmentation criteria, such as geographic location or purchase history.
+
+Automated Campaign Scheduling: Schedule campaigns to send automatically at specified times.
 
 
 ## Acknowledgments

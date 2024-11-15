@@ -4,14 +4,14 @@ Xeno CRM & Campaign Management App is a web application that allows brands to ma
 
 ## Table of Contents
 
-•	Features
-•	Technologies Used
-•	Setup Instructions
-•	Environment Variables
-•	Usage
-•	Project Structure
-•	Deployment
-•	Future Enhancements
+	•	Features
+	•	Technologies Used
+	•	Setup Instructions
+	•	Environment Variables
+	•	Usage
+	•	Project Structure
+	•	Deployment
+	•	Future Enhancements
 
 ## Features
 

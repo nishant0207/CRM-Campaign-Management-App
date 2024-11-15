@@ -25,11 +25,11 @@ Xeno CRM & Campaign Management App is a web application that allows brands to ma
 
 ## Technologies Used
 
-**Frontend:** React.js, React Router, Firebase Authentication
-**Backend:** Node.js, Express.js, MongoDB
-**Database:** MongoDB (with Mongoose for data modeling)
-**Authentication:** Firebase Authentication (Google sign-in)
-**Deployment:** Netlify (frontend), Heroku or Render (backend)
+**Frontend:** React.js, React Router, Firebase Authentication.
+**Backend:** Node.js, Express.js, MongoDB.
+**Database:** MongoDB (with Mongoose for data modeling).
+**Authentication:** Firebase Authentication (Google sign-in).
+**Deployment:** Netlify (frontend), Heroku or Render (backend).
 
 ## Setup Instructions
 

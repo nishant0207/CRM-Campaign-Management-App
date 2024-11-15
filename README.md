@@ -35,9 +35,9 @@ Xeno CRM & Campaign Management App is a web application that allows brands to ma
 
 **Prerequisites**
 
-•	Node.js and npm
-•	MongoDB (local or cloud instance)
-•	Firebase project (for Google Authentication)
+	- Node.js and npm
+	- MongoDB (local or cloud instance)
+	- Firebase project (for Google Authentication)
 
 **1. Clone the Repository**
 
@@ -56,7 +56,8 @@ cd xeno-crm-campaign-app
 	npm install
 
 3.	Environment Variables:
-Create a .env file in the backend root directory and add the following environment variables:
+	
+ 	Create a .env file in the backend root directory and add the following environment variables:
 
 	MONGODB_URI=mongodb://localhost:27017/xeno_crm
 	PORT=3000
@@ -69,46 +70,47 @@ The backend should now be running on http://localhost:3000.
 
 **3. Frontend Setup**
 
-	1.	Navigate to the Frontend Directory:
+1.	Navigate to the Frontend Directory:
 
-cd xeno-crm-frontend
-
-
-	2.	Install Frontend Dependencies:
-
-npm install
+	cd xeno-crm-frontend
 
 
-	3.	Firebase Configuration:
+2.	Install Frontend Dependencies:
+
+	npm install
+
+
+3.	Firebase Configuration:
+
 Create a Firebase project in the Firebase Console and enable Google Authentication. Get the Firebase configuration settings and add them to src/firebaseConfig.js:
 
-import { initializeApp } from 'firebase/app';
-import { getAuth, GoogleAuthProvider } from 'firebase/auth';
+	import { initializeApp } from 'firebase/app';
+	import { getAuth, GoogleAuthProvider } from 'firebase/auth';
+	
+	const firebaseConfig = {
+	  apiKey: "YOUR_API_KEY",
+	  authDomain: "YOUR_AUTH_DOMAIN",
+	  projectId: "YOUR_PROJECT_ID",
+	  storageBucket: "YOUR_STORAGE_BUCKET",
+	  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+	  appId: "YOUR_APP_ID",
+	  measurementId: "YOUR_MEASUREMENT_ID"
+	};
 
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
-};
-
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const googleProvider = new GoogleAuthProvider();
-
-
-	4.	Set Up API URL:
-In src/services/api.js, set the base URL for the backend API:
-
-const API_URL = 'http://localhost:3000/api';
+	const app = initializeApp(firebaseConfig);
+	export const auth = getAuth(app);
+	export const googleProvider = new GoogleAuthProvider();
 
 
-	5.	Run the Frontend Server:
+4.	Set Up API URL:
+	In src/services/api.js, set the base URL for the backend API:
 
-npm start
+	const API_URL = 'http://localhost:3000/api';
+
+
+5.	Run the Frontend Server:
+
+   	npm start
 
 The frontend should now be running on http://localhost:3001.
 

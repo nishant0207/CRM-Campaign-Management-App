@@ -48,23 +48,23 @@ Xeno CRM & Campaign Management App is a web application that allows brands to ma
 
 1.	Navigate to the Backend Directory:
 
-	cd xeno-crm
+		cd xeno-crm
 
 
 2.	Install Backend Dependencies:
 
-	npm install
+		npm install
 
 3.	Environment Variables:
 	
  	Create a .env file in the backend root directory and add the following environment variables:
 
-	MONGODB_URI=mongodb://localhost:27017/xeno_crm
-	PORT=3000
+		MONGODB_URI=mongodb://localhost:27017/xeno_crm
+		PORT=3000
 
 4.	Run the Backend Server:
 
-	node app.js
+		node app.js
 
 The backend should now be running on http://localhost:3000.
 

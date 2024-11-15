@@ -32,10 +32,9 @@ Xeno CRM & Campaign Management App is a web application that allows brands to ma
 ## Setup Instructions
 
 **Prerequisites**
-	
- 	Node.js and npm
-	MongoDB (local or cloud instance)
-	Firebase project (for Google Authentication)
+ 	- Node.js and npm
+	- MongoDB (local or cloud instance)
+	- Firebase project (for Google Authentication)
 
 **1. Clone the Repository**
 

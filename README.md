@@ -122,33 +122,33 @@ The frontend should now be running on http://localhost:3001.
 
 ## Usage
 
-1.	Authentication:
-		Visit http://localhost:3001.
-		Sign in with your Google account to access the dashboard.
-2.	Dashboard:
-		Create Campaign: Define a campaign with a target audience based on conditions like spending, visits, and last visit.
-		Send Messages: Click “Send Messages” for each campaign to send messages to the audience and track delivery.
-		View Statistics: Navigate to the Statistics page to view cumulative stats for all campaigns.
+	1.	Authentication:
+			Visit http://localhost:3001.
+			Sign in with your Google account to access the dashboard.
+	2.	Dashboard:
+			Create Campaign: Define a campaign with a target audience based on conditions like spending, visits, and last visit.
+			Send Messages: Click “Send Messages” for each campaign to send messages to the audience and track delivery.
+			View Statistics: Navigate to the Statistics page to view cumulative stats for all campaigns.
 
 ## Project Structure
 
-xeno-crm-campaign-app/
-├── xeno-crm/                   # Backend
-│   ├── config/                  # MongoDB connection
-│   ├── controllers/             # API request handlers
-│   ├── models/                  # Mongoose schemas (Customer, Order, Campaign)
-│   ├── routes/                  # Route definitions
-│   ├── app.js                   # Main server file
-│   └── .env                     # Environment variables
-└── xeno-crm-frontend/           # Frontend
-    ├── public/                  # Public assets
-    ├── src/
-    │   ├── components/          # Reusable components (e.g., Login)
-    │   ├── pages/               # Main pages (Dashboard, Statistics)
-    │   ├── services/            # API service functions
-    │   ├── App.js               # Main app component
-    │   └── firebaseConfig.js    # Firebase config for Google Authentication
-    └── .env                     # Frontend environment variables
+	xeno-crm-campaign-app/
+	├── xeno-crm/                   # Backend
+	│   ├── config/                  # MongoDB connection
+	│   ├── controllers/             # API request handlers
+	│   ├── models/                  # Mongoose schemas (Customer, Order, Campaign)
+	│   ├── routes/                  # Route definitions
+	│   ├── app.js                   # Main server file
+	│   └── .env                     # Environment variables
+	└── xeno-crm-frontend/           # Frontend
+	    ├── public/                  # Public assets
+	    ├── src/
+	    │   ├── components/          # Reusable components (e.g., Login)
+	    │   ├── pages/               # Main pages (Dashboard, Statistics)
+	    │   ├── services/            # API service functions
+	    │   ├── App.js               # Main app component
+	    │   └── firebaseConfig.js    # Firebase config for Google Authentication
+	    └── .env                     # Frontend environment variables
 
 ## Deployment
 

@@ -27,6 +27,7 @@ app.use(
     origin: ['http://localhost:3001', 'https://crm-frontend-ebon-delta.vercel.app'], // Allow both local and deployed frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true, // Allow cookies and authorization headers
+    allowedHeaders: ['Content-Type', 'Authorization']
   })
 );
 

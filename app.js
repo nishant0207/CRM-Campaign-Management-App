@@ -20,8 +20,6 @@ const app = express();
 // }));
 
 
-const cors = require('cors');
-
 app.use(
   cors({
     origin: ['http://localhost:3001', 'https://crm-frontend-ebon-delta.vercel.app'], // Allow both local and deployed frontend

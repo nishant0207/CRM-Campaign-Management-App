@@ -15,8 +15,13 @@ connectDB();
 const app = express();
 
 // Enable CORS for the frontend URL
+// app.use(cors({
+//     origin: 'http://localhost:3001'
+// }));
+
+
 app.use(cors({
-    origin: 'http://localhost:3001'
+  origin: 'https://crm-frontend-ebon-delta.vercel.app' // Allow requests only from the deployed frontend
 }));
 
 // Middleware for parsing JSON requests

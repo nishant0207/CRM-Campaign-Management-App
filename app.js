@@ -20,11 +20,15 @@ const app = express();
 // }));
 
 
-app.use(cors({
-  origin: ['https://crm-frontend-ebon-delta.vercel.app/', "http://localhost:3001/"], // Allow the deployed frontend
-  methods: ['GET', 'POST', 'PUT', 'DELETE','OPTIONS'], // Allowed HTTP methods
-  credentials: true // Allow credentials to be included
-}));
+const cors = require('cors');
+
+app.use(
+  cors({
+    origin: ['http://localhost:3001', 'https://crm-frontend-ebon-delta.vercel.app'], // Allow both local and deployed frontend
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true, // Allow cookies and authorization headers
+  })
+);
 
 // Middleware for parsing JSON requests
 app.use(express.json());

@@ -10,11 +10,11 @@ const authenticate = async (req, res, next) => {
   const idToken = authHeader.split(' ')[1];
   try {
     const decodedToken = await admin.auth().verifyIdToken(idToken);
-    console.log('Decoded Token:', decodedToken);
+    console.log('Decoded Token:', decodedToken); // Debug decoded token
     req.user = decodedToken;
     next();
   } catch (error) {
-    console.error('Token Verification Failed:', error);
+    console.error('Token Verification Failed:', error); // Debug error
     return res.status(403).json({ error: 'Unauthorized: Invalid token' });
   }
 };

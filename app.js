@@ -21,8 +21,8 @@ const app = express();
 
 
 app.use(cors({
-  origin: ['https://xeno-crm-frontend.vercel.app'], // Allow the deployed frontend
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+  origin: ['https://crm-frontend-ebon-delta.vercel.app/', "http://localhost:3001/"], // Allow the deployed frontend
+  methods: ['GET', 'POST', 'PUT', 'DELETE','OPTIONS'], // Allowed HTTP methods
   credentials: true // Allow credentials to be included
 }));
 

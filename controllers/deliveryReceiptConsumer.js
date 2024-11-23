@@ -35,7 +35,6 @@ redisClient.connect()
 const BATCH_SIZE = 5; // Number of messages to process in one batch
 const POLL_INTERVAL = 5000; // Polling interval in milliseconds for remaining messages
 
-
 // Process a batch of messages
 async function processBatch(messages) {
   console.log(`Processing batch of ${messages.length} messages`);

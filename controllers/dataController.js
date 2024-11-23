@@ -82,19 +82,25 @@ const createAudienceSegment = async (req, res) => {
 const createCampaign = async (req, res) => {
   try {
     const { name, conditions, message } = req.body;
+
+    // Find audience based on conditions
     const audience = await Customer.find(conditions);
     const audienceSize = audience.length;
 
+    // Create new campaign
     const newCampaign = new Campaign({
       name,
       conditions,
       message,
       stats: {
-        audienceSize: audienceSize,
-      }
+        audienceSize,
+        messagesSent: 0,
+        messagesFailed: 0,
+      },
     });
 
     await newCampaign.save();
+
     res.status(201).json({ message: 'Campaign created successfully', campaign: newCampaign });
   } catch (error) {
     console.error('Error creating campaign:', error);
@@ -126,38 +132,28 @@ const sendMessages = async (req, res) => {
 
     // Fetch audience based on campaign conditions
     const audience = await Customer.find(campaign.conditions);
-    const totalAudienceSize = audience.length;
 
-    let messagesSent = 0;
-
+    // Publish messages to Redis for delivery
     for (const customer of audience) {
       const personalizedMessage = campaign.message.replace('[Name]', customer.name);
-
-      // Create a Redis message for delivery receipt
       const deliveryMessage = {
-        logId: new mongoose.Types.ObjectId(), // Generate a new ObjectId for the log
+        logId: new mongoose.Types.ObjectId(), // Unique Log ID
         campaignId,
         customerId: customer._id,
         message: personalizedMessage,
       };
 
-      // Publish the message to the Redis channel
-      publish({
-        type: 'delivery_receipt',
-        data: deliveryMessage,
-      });
-
-      messagesSent++;
+      publish(JSON.stringify(deliveryMessage)); // Publish to Redis queue
     }
 
-    // Update campaign stats
-    campaign.stats.messagesSent = messagesSent;
+    // Update campaign stats (messagesSent is provisional; updated via receipt)
+    campaign.stats.messagesSent = audience.length;
     await campaign.save();
 
     res.status(200).json({
       message: 'Messages sent successfully',
-      totalAudienceSize,
-      messagesSent,
+      audienceSize: audience.length,
+      messagesSent: audience.length,
     });
   } catch (error) {
     console.error('Error sending messages:', error);

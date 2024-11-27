@@ -1,6 +1,6 @@
-Xeno CRM & Campaign Management App
+## CRM & Campaign Management App
 
-Xeno CRM & Campaign Management App is a web application that allows brands to manage customer relationships, create audience segments, send personalized campaigns, and track engagement. This app provides a simplified CRM system with key features for customer interaction and data-driven marketing.
+CRM & Campaign Management App is a web application that allows brands to manage customer relationships, create audience segments, send personalized campaigns, and track engagement. This app provides a simplified CRM system with key features for customer interaction and data-driven marketing.
 
 Table of Contents
 
